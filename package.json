@@ -1,0 +1,21 @@
+{
+  "name": "avionics-gui-node",
+  "version": "1.0.0",
+  "description": "Node.js Electron GUI for Avionics Task Simulator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "avionics",
+    "simulator",
+    "gui",
+    "electron"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0" 
+  }
+} 

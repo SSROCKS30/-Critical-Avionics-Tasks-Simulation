@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avionics Task Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Avionics Task Simulator</h1>
+
+        <div class="controls-card card">
+            <h2><i class="fas fa-cogs"></i> Controls</h2>
+            <div class="control-group">
+                <label for="workload">Simulated Workload (ms):</label>
+                <input type="number" id="workload" min="1">
+                <button id="setWorkloadBtn">Set Workload</button>
+            </div>
+            <div class="control-group">
+                <label for="period">Task Period (ms):</label>
+                <input type="number" id="period" min="1">
+                <button id="setPeriodBtn">Set Period</button>
+            </div>
+            <div class="control-group">
+                <label for="deadline">Task Deadline (ms):</label>
+                <input type="number" id="deadline" min="1">
+                <button id="setDeadlineBtn">Set Deadline</button>
+            </div>
+            <p id="statusMessage" class="status-message"></p>
+        </div>
+
+        <div class="status-card card">
+            <h2><i class="fas fa-tachometer-alt"></i> Status</h2>
+            <div id="statusData" class="status-grid">
+                <!-- Status data will be populated here by renderer.js -->
+            </div>
+        </div>
+
+    </div>
+    <script src="renderer.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html> 
